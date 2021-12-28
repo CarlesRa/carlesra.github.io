@@ -1,18 +1,21 @@
 <mat-toolbar color="primary">
     <div class="d-flex justify-content-start align-items-center">
-        <button mat-icon-button (click)="drawer.toggle()">
-            <mat-icon>menu</mat-icon>
-        </button>
-        <span>Carles Ramos</span>
-        <button mat-button>
-            option 1
-        </button>
-        <button mat-button>
-            option 2
-        </button>
-        <button mat-button>
-            option 3
-        </button>
+        <div class="d-flex flex-wrap">
+            <button mat-icon-button>
+                <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+            </button>
+            <div>
+                <button mat-button>
+                    option 1
+                </button>
+                <button mat-button>
+                    option 2
+                </button>
+                <button mat-button>
+                    option 3
+                </button>
+            </div>
+        </div>
     </div>
 </mat-toolbar>
 <mat-sidenav-container class="nav-container">
