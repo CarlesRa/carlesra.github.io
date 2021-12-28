@@ -1,4 +1,25 @@
 <mat-toolbar color="primary">
-  <span>CarlesRa</span>
+    <div class="d-flex justify-content-start align-items-center">
+        <button mat-icon-button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>Carles Ramos</span>
+        <button mat-button>
+            option 1
+        </button>
+        <button mat-button>
+            option 2
+        </button>
+        <button mat-button>
+            option 3
+        </button>
+    </div>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<mat-sidenav-container class="nav-container">
+    <mat-sidenav #drawer mode="side">
+        Side nav content
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
