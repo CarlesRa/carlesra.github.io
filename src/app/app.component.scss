@@ -1,8 +1,17 @@
+.mat-toolbar {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that app's content doesn't overlap the toolbar */
+  -webkit-box-shadow: 0px -1px 8px 5px rgba(0,0,0,0.78);
+  box-shadow: 0px -1px 8px 5px rgba(0,0,0,0.78);
+}
+
 mat-sidenav-container {
     height: 100%;
   }
   mat-sidenav-content {
-
+    padding: 10px;
   }
   mat-sidenav {
     background-color: #7986cb;
