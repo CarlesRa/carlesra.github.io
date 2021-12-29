@@ -1,4 +1,8 @@
-<div class="container mt-5">
-    <h1 @fade>Carles Ramos</h1>
+<div *ngIf="!loading" class="container mt-5">
+  <div class="d-flex">
+    <h1 @largeFade class="diagonal-bottom-right" style="font-size: 2rem">Carles Ramos</h1>
+    <small @largeFade class="ms-1"> Software Developer</small>
+  </div>
+  <hr>
 </div>
 

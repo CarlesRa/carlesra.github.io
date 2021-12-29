@@ -10,10 +10,12 @@ import { largeFadeTrigger } from 'src/app/animations/animationsTriggers';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  loading = true;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.loading = false;
   }
 
 }

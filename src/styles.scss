@@ -1,2 +1,30 @@
 html, body { height: 100%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Animations
+@keyframes example {
+  from {
+    color: red;
+    font-size: 3rem;
+    margin-left: 80%;
+    margin-top: 70%;
+  }
+  to {
+    color: white;
+    font-size: 2rem;
+    margin-left: 0;
+  }
+}
+
+@keyframes example1 {
+  0% { color: red; margin-left: 80%; margin-top: 80%}
+  25% { color: green; margin-left: 60%; margin-top: 60%;}
+  50% { color: yellow; margin-left: 40%; margin-top: 40%;}
+  75% { color: #0d6efd; margin-left: 20%; margin-top: 20%;}
+  100% { color: white}
+}
+
+.diagonal-bottom-right {
+  animation-name: example;
+  animation-duration: 5s;
+}

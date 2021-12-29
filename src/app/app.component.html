@@ -18,11 +18,11 @@
         </div>
     </div>
 </mat-toolbar>
-<mat-sidenav-container class="nav-container">
-    <mat-sidenav #drawer mode="over">
+<mat-drawer-container class="nav-container">
+    <mat-drawer #drawer mode="over">
         Side nav content
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <router-outlet></router-outlet>
-    </mat-sidenav-content>
-</mat-sidenav-container>
+    </mat-drawer>
+    <mat-drawer-content>
+        <main><router-outlet></router-outlet></main>
+    </mat-drawer-content>
+</mat-drawer-container>
