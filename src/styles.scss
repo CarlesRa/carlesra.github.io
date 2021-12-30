@@ -2,15 +2,17 @@ html, body { height: 100%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 // Animations
-@keyframes example {
+@keyframes diagonal-bottom-right {
   from {
     color: red;
+    opacity: 0;
     font-size: 3rem;
-    margin-left: 80%;
+    margin-left: 70%;
     margin-top: 70%;
   }
   to {
     color: white;
+    opacity: 1;
     font-size: 2rem;
     margin-left: 0;
   }
@@ -25,6 +27,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .diagonal-bottom-right {
-  animation-name: example;
+  animation-name: diagonal-bottom-right;
   animation-duration: 5s;
 }
