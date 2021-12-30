@@ -30,11 +30,15 @@ body {
 // End Text
 
 // Animations
+
+:root {
+  --font-size: 3rem;
+}
 @keyframes diagonal-bottom-right {
   from {
     color: greenyellow;
     opacity: 0;
-    font-size: 3rem;
+    font-size: var(--font-size);
     margin-left: 70%;
     margin-top: 70%;
   }
@@ -49,7 +53,7 @@ body {
   from {
     color: greenyellow;
     opacity: 0;
-    font-size: 3rem;
+    font-size: var(--font-size);
     margin-left: 90%;
   }
   to {
@@ -89,4 +93,25 @@ body {
   animation-name: bottom-to-top;
   animation-duration: 5s;
   animation-delay: 5s;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --font-size: 0.3rem;
+  }
+
+  // Text
+  .text-super {
+    font-size: 4rem;
+  }
+  .text-big {
+    font-size: 2rem;
+  }
+  .text-middle {
+    font-size: 1.2rem;
+  }
+  .text-normal {
+    font-size: 1rem;
+  }
+  // End Text
 }
