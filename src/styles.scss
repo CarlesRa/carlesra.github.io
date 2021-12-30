@@ -1,10 +1,38 @@
-html, body { height: 100%;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto,
+  "Helvetica Neue", sans-serif;
+}
+
+// Containers
+.w-100 {
+  width: 100%;
+}
+
+// End Containers
+
+// Text
+.text-super {
+  font-size: 6rem;
+}
+.text-big {
+  font-size: 3rem;
+}
+.text-middle {
+  font-size: 1.5rem;
+}
+.text-normal {
+  font-size: 1rem;
+}
+// End Text
 
 // Animations
 @keyframes diagonal-bottom-right {
   from {
-    color: red;
+    color: greenyellow;
     opacity: 0;
     font-size: 3rem;
     margin-left: 70%;
@@ -14,7 +42,28 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: white;
     opacity: 1;
     font-size: 2rem;
-    margin-left: 0;
+  }
+}
+
+@keyframes left-to-right {
+  from {
+    color: greenyellow;
+    opacity: 0;
+    font-size: 3rem;
+    margin-left: 90%;
+  }
+  to {
+    color: white;
+    opacity: 1;
+  }
+}
+
+@keyframes bottom-to-top {
+  from {
+    margin-top: 70%;
+  }
+  to {
+    margin-top: 0;
   }
 }
 
@@ -29,4 +78,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .diagonal-bottom-right {
   animation-name: diagonal-bottom-right;
   animation-duration: 5s;
+}
+
+.left-to-right {
+  animation-name: left-to-right;
+  animation-duration: 5s
+}
+
+.bottom-to-top {
+  animation-name: bottom-to-top;
+  animation-duration: 5s;
+  animation-delay: 5s;
 }
