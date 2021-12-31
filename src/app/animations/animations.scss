@@ -1,0 +1,65 @@
+// Animations
+:root { // global vars to use in media queries
+  --font-size: 1.5rem;
+}
+@keyframes diagonal-bottom-right {
+  from {
+    color: #480f5e;
+    opacity: 0;
+    font-size: var(--font-size);
+    margin-left: 70%;
+    margin-top: 70%;
+  }
+  to {
+    color: white;
+    opacity: 1;
+    font-size: 2rem;
+  }
+}
+
+@keyframes left-to-right {
+  from {
+    color: #480f5e;
+    opacity: 0;
+    font-size: var(--font-size);
+    margin-left: 90%;
+  }
+  to {
+    color: white;
+    opacity: 1;
+  }
+}
+
+@keyframes bottom-to-top {
+  from {
+    margin-top: 70%;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+.diagonal-bottom-right {
+  animation-name: diagonal-bottom-right;
+  animation-duration: 5s;
+}
+
+.left-to-right {
+  animation-name: left-to-right;
+  animation-duration: 5s
+}
+
+.bottom-to-top {
+  animation-name: bottom-to-top;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+@media only screen and (max-width: 600px) {
+  // Animations
+  :root {
+    --font-size: 0.1rem;
+  }
+}
+// End Animations
+

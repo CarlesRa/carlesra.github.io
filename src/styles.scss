@@ -7,11 +7,18 @@ body {
   "Helvetica Neue", sans-serif;
 }
 
+.back-gradient {
+  background: rgb(0,0,0);
+  background: -moz-radial-gradient(circle, rgba(0,0,0,1) 31%, rgba(86,16,101,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 31%, rgba(86,16,101,1) 100%);
+  background: radial-gradient(circle, rgba(0,0,0,1) 31%, rgba(86,16,101,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#561065",GradientType=1);
+}
+
 // Containers
 .w-100 {
   width: 100%;
 }
-
 // End Containers
 
 // Text
@@ -27,79 +34,12 @@ body {
 .text-normal {
   font-size: 1rem;
 }
-// End Text
 
-// Animations
-
-:root {
-  --font-size: 3rem;
-}
-@keyframes diagonal-bottom-right {
-  from {
-    color: greenyellow;
-    opacity: 0;
-    font-size: var(--font-size);
-    margin-left: 70%;
-    margin-top: 70%;
-  }
-  to {
-    color: white;
-    opacity: 1;
-    font-size: 2rem;
-  }
-}
-
-@keyframes left-to-right {
-  from {
-    color: greenyellow;
-    opacity: 0;
-    font-size: var(--font-size);
-    margin-left: 90%;
-  }
-  to {
-    color: white;
-    opacity: 1;
-  }
-}
-
-@keyframes bottom-to-top {
-  from {
-    margin-top: 70%;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
-@keyframes example1 {
-  0% { color: red; margin-left: 80%; margin-top: 80%}
-  25% { color: green; margin-left: 60%; margin-top: 60%;}
-  50% { color: yellow; margin-left: 40%; margin-top: 40%;}
-  75% { color: #0d6efd; margin-left: 20%; margin-top: 20%;}
-  100% { color: white}
-}
-
-.diagonal-bottom-right {
-  animation-name: diagonal-bottom-right;
-  animation-duration: 5s;
-}
-
-.left-to-right {
-  animation-name: left-to-right;
-  animation-duration: 5s
-}
-
-.bottom-to-top {
-  animation-name: bottom-to-top;
-  animation-duration: 5s;
-  animation-delay: 5s;
+hr {
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
-  :root {
-    --font-size: 0.1rem;
-  }
-
   // Text
   .text-super {
     font-size: 4rem;
@@ -114,4 +54,13 @@ body {
     font-size: 1rem;
   }
   // End Text
+}
+
+
+@keyframes example1 { // EXAMPLE
+  0% { color: red; margin-left: 80%; margin-top: 80%}
+  25% { color: green; margin-left: 60%; margin-top: 60%;}
+  50% { color: yellow; margin-left: 40%; margin-top: 40%;}
+  75% { color: #0d6efd; margin-left: 20%; margin-top: 20%;}
+  100% { color: white}
 }

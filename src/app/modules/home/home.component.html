@@ -1,19 +1,21 @@
 <div *ngIf="!loading" class="container mt-5">
   <div @largeFade class="d-flex">
     <h1 class="diagonal-bottom-right" style="font-size: 2rem">Carles Ramos</h1>
-    <small class="ms-1"> Software Developer</small>
+    <small class="ms-1 left-to-right"> Software Developer</small>
   </div>
   <hr>
   <div class="row mt-4 p-4">
     <div class="col-md-2">
-      <img src="https://media-exp1.licdn.com/dms/image/C5603AQFnvXzByXaQTA/profile-displayphoto-shrink_200_200/0/1604958146096?e=1644451200&v=beta&t=k3BxMn6OSY_wouoYOPZOJVKmQGsyJoP4si2TZShNnxI" alt="Mi imagen">
+      <img
+        src="https://media-exp1.licdn.com/dms/image/C5603AQFnvXzByXaQTA/profile-displayphoto-shrink_200_200/0/1604958146096?e=1644451200&v=beta&t=k3BxMn6OSY_wouoYOPZOJVKmQGsyJoP4si2TZShNnxI"
+        alt="Mi imagen" class="rounded-circle">
     </div>
     <div class="col-md-8 text-middle lh-sm">
       <div class="w-100 left-to-right">
         <span class="text-big">{{ 'welcome' | translate }}</span>
         <hr>
       </div>
-      <div>
+      <div class="p-3 border-color">
         <p>{{ 'homeContentHeader' | translate }}</p>
         <p>{{ 'homeContentContent' | translate }}</p>
         <p>{{ 'thanks' | translate }}</p>
@@ -21,8 +23,17 @@
     </div>
   </div>
   <div class="row">
-    <div class="col">
-      some other text
+    <div class="col text-center mt-2">
+      <hr>
+      <mat-chip-list>
+        <mat-chip @largeFade selected class="text-middle ms-3 mt-5" style="height: 3rem;" color="accent"
+                  *ngFor="let chip of chipList">
+          {{ chip }}
+        </mat-chip>
+      </mat-chip-list>
     </div>
+  </div>
+  <div class="row justify-content-center mt-5">
+    <mat-icon class="text-big">facebook</mat-icon>
   </div>
 </div>
