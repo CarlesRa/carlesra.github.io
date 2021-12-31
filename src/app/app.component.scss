@@ -11,6 +11,8 @@ mat-drawer-container, mat-drawer-content { display: block; height: 100%; }
 mat-drawer {
   width: 200px;
   padding: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 mat-drawer:not(.mat-drawer-side) {
   position: fixed;
