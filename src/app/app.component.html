@@ -2,7 +2,7 @@
   <button mat-icon-button>
     <mat-icon (click)="drawer.toggle()">menu</mat-icon>
   </button>
-  <button mat-button>
+  <!--<button mat-button>
     option 1
   </button>
   <button mat-button>
@@ -10,19 +10,20 @@
   </button>
   <button mat-button>
     option 3
-  </button>
+  </button>-->
   <div class="spacer"></div>
   <span>
     <select #selectedLang (change)="switchLang(selectedLang.value)">
       <option *ngFor="let language of translate.getLangs()" [value]="language"
-              [selected]="language === translate.getDefaultLang()">
+              [selected]="language === translate.getDefaultLang()"
+      style="background-image: url('assets/images/es.jpg')">
         {{ language }}
       </option>
   </select>
   </span>
 </mat-toolbar>
 <mat-drawer-container class="nav-container">
-  <mat-drawer #drawer mode="push" class="back-gradient">
+  <mat-drawer #drawer mode="over" class="back-gradient">
     <div style="margin-top: 56px"></div>
     <p>Side nav content</p> <!--style="margin-top: 4rem"-->
   </mat-drawer>

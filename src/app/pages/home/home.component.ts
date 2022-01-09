@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { largeFadeTrigger } from 'src/app/animations/animationsTriggers';
-import {StoreDataService} from "./services/store-data.service";
 
 @Component({
   selector: 'app-home',
@@ -15,9 +14,9 @@ export class HomeComponent implements OnInit {
   chipList: string[] = [];
 
   constructor(
-    private storeDataService: StoreDataService,
+
   ) {
-    this.chipList = this.storeDataService.getHomeChips();
+
   }
 
   ngOnInit(): void {
